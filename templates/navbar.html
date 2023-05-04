@@ -1,0 +1,66 @@
+<div
+        class="cursor-elem pointer-events-none fixed z-[60] hidden h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-solid border-black transition-[padding] duration-500 dark:border-white lg:block"></div>
+<nav class="navbar relative z-50 bg-white/80 dark:bg-neutral-800/50">
+    <div
+            class="mx-auto flex w-full max-w-screen-2xl flex-row items-center justify-between px-4 py-6 lg:px-8">
+        <div class="w-32 text-center font-foldit text-5xl">Pouya</div>
+        <ul class="hidden flex-row items-center gap-8 lg:flex">
+            <li>
+                <a
+                        class="tc-300 font-bold text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-400"
+                        href="#">
+                    خانه
+                </a>
+            </li>
+            <li>
+                <a
+                        class="tc-300 font-bold text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-400"
+                        href="#blog">
+                    بلاگ
+                </a>
+            </li>
+            <li>
+                <a
+                        class="tc-300 font-bold text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-400"
+                        href="#about">
+                    درباره من
+                </a>
+            </li>
+        </ul>
+        <div class="w-fit lg:w-32">
+            <button
+                    class="tc-300 hidden w-full rounded-2xl bg-purple-500 py-3.5 font-bold text-white hover:bg-purple-600 dark:bg-purple-400/80 dark:hover:bg-purple-500/80 lg:block">
+                تماس با من
+            </button>
+            <button class="collapse-item block lg:hidden">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="block h-10 w-10">
+                    <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <ul
+            class="collapse-item absolute left-0 right-0 top-[99%] hidden flex-col items-stretch bg-white/95 p-4 dark:bg-neutral-800/95 lg:hidden">
+        <li
+                class="border-b border-solid border-b-black/20 last:border-0 dark:border-b-white/10">
+            <a class="block w-full px-1 py-3" href="#">خانه</a>
+        </li>
+        <li
+                class="border-b border-solid border-b-black/20 last:border-0 dark:border-b-white/10">
+            <a class="block w-full px-1 py-3" href="#blog">بلاگ</a>
+        </li>
+        <li
+                class="border-b border-solid border-b-black/20 last:border-0 dark:border-b-white/10">
+            <a class="block w-full px-1 py-3" href="#about">درباره من</a>
+        </li>
+    </ul>
+</nav>
