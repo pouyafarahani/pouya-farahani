@@ -1,3 +1,14 @@
 from django.db import models
+from django.utils import timezone
 
-# Create your models here.
+
+class BlogModel(models.Model):
+    create_time = models.DateTimeField(default=timezone)
+
+    image = models.ImageField(upload_to='cover/')
+    title = models.CharField(max_length=500)
+    description = models.TextField()
+    short_description = models.CharField(max_length=500)
+
+    def __str__(self):
+        return f'{self.title} ===> {self.short_description}'
