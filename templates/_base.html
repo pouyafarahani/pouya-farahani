@@ -3,9 +3,8 @@
 <html class="dark" lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8"/>
-    <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>{% block title %} {% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}"/>
@@ -13,9 +12,15 @@
 </head>
 
 <body class="overflow-x-hidden bg-gray-50 leading-8 text-gray-800 dark:bg-neutral-900 dark:text-gray-200">
+
 {% include 'navbar.html' %}
+
 {% block body %}
 
 {% endblock body %}
+
+{% include 'footer.html' %}
+
+<script src="{% static 'js/main.js' %}"></script>
 
 </body>

@@ -8,14 +8,14 @@
             <li>
                 <a
                         class="tc-300 font-bold text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-400"
-                        href="#">
+                        href="{% url 'home:home' %}">
                     خانه
                 </a>
             </li>
             <li>
                 <a
                         class="tc-300 font-bold text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-400"
-                        href="#blog">
+                        href="{% url 'blog:blog_list' %}">
                     بلاگ
                 </a>
             </li>
@@ -52,11 +52,11 @@
             class="collapse-item absolute left-0 right-0 top-[99%] hidden flex-col items-stretch bg-white/95 p-4 dark:bg-neutral-800/95 lg:hidden">
         <li
                 class="border-b border-solid border-b-black/20 last:border-0 dark:border-b-white/10">
-            <a class="block w-full px-1 py-3" href="#">خانه</a>
+            <a class="block w-full px-1 py-3" href="{% url 'home:home' %}">خانه</a>
         </li>
         <li
                 class="border-b border-solid border-b-black/20 last:border-0 dark:border-b-white/10">
-            <a class="block w-full px-1 py-3" href="#blog">بلاگ</a>
+            <a class="block w-full px-1 py-3" href="{% url 'blog:blog_list' %}">بلاگ</a>
         </li>
         <li
                 class="border-b border-solid border-b-black/20 last:border-0 dark:border-b-white/10">
