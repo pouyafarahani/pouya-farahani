@@ -1,4 +1,5 @@
 {% extends '_base.html' %}
+{% load jalali_tags %}
 {% load static %}
 
 {% block title %}Pouya - BlogList {% endblock title %}
@@ -48,7 +49,7 @@
                             <div class="relative w-full">
                 <span
                         class="absolute right-6 top-0 rounded-b-lg bg-purple-500 px-4 py-2 font-dosis text-sm text-white dark:bg-purple-600">
-                  {{ blogs.create_time }}
+                  {{ blogs.create_time|to_jalali:'%y/%m/%d' }}
                 </span>
                                 <img
                                         class="aspect-video w-full rounded-lg object-cover"
