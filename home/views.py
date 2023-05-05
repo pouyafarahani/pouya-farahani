@@ -11,4 +11,4 @@ class HomeView(ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        return queryset.order_by('-id')[:6]
+        return queryset.order_by('-id')[:3]

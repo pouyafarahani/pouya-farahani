@@ -219,7 +219,7 @@
                                 <p class="mb-3 text-justify text-sm leading-8">
                                     {{ blogs.short_description }}
                                 </p>
-                                <a href="{% url 'blog:blog_detail' %}" class="btn btn--block btn-small">
+                                <a href="{{ blogs.get_absolute_url }}" class="btn btn--block btn-small">
                                     مطالعه بیشتر
                                 </a>
                             </div>

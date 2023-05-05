@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 
 from tinymce.models import HTMLField
@@ -14,3 +15,6 @@ class BlogModel(models.Model):
 
     def __str__(self):
         return f'{self.title} ===> {self.short_description}'
+
+    def get_absolute_url(self):
+        return reverse('blog:blog_detail', args=[str(self.id)])
