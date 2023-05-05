@@ -1,26 +1,22 @@
-from django.shortcuts import redirect
-from django.views.generic import ListView
-from django.views import View
 from django.contrib import messages
-
+from django.shortcuts import redirect, render
+from django.urls import reverse_lazy
 from blog.models import BlogModel
 from .forms import CommentForm
 
 
-class HomeView(ListView, View):
-    model = BlogModel
-    template_name = 'home/home.html'
-    context_object_name = 'blog'
+def home_view(request):
+    queryset = BlogModel.objects.order_by('-id')[:3].select_related()
+    context = {'blog': queryset}
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        return queryset.order_by('-id')[:3]
-
-    def post(self, request):
+    if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'نظر شما با موفقیت ثبت شد')
-            return redirect('home:home')
-        messages.warning(request, f'لطفا اطلاعات را به درستی وارد کنید')
-        return redirect('home:home')
+        else:
+            messages.warning(request, f'لطفا اطلاعات را به درستی وارد کنید')
+
+        return redirect(reverse_lazy('home:home'))
+
+    return render(request, 'home/home.html', context)
