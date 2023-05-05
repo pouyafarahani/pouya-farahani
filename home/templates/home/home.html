@@ -32,10 +32,11 @@
                             درباره من
                         </button>
                     </form>
-                    <button
-                            class="tc-300 flex flex-row items-center gap-3 rounded-2xl px-8 py-4 hover:bg-gray-100 dark:hover:bg-gray-700/20">
-                        <span>دانلود رزومه</span>
-                        <span>
+                    <form action="">
+                        <button
+                                class="tc-300 flex flex-row items-center gap-3 rounded-2xl px-8 py-4 hover:bg-gray-100 dark:hover:bg-gray-700/20">
+                            <span>دانلود رزومه</span>
+                            <span>
                 <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -43,13 +44,12 @@
                         stroke-width="1.5"
                         stroke="currentColor"
                         class="h-6 w-6">
-                  <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
                 </svg>
               </span>
-                    </button>
+                        </button>
+                    </form>
                 </div>
                 <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
                     <div>
@@ -237,4 +237,5 @@
     </main>
     <script src="{% static 'js/typed.umd.js' %}"></script>
     <script src="{% static 'js/typer.js' %}"></script>
+
 {% endblock body %}
