@@ -1,4 +1,5 @@
 {% extends '_base.html' %}
+{% load jalali_tags %}
 {% load static %}
 
 {% block title %}Pouya - Home {% endblock title %}
@@ -190,9 +191,7 @@
                     وبلاگ و مقالات
                 </h3>
                 <p class="mx-auto mb-8 max-w-xl text-center text-sm leading-8">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-                    ستون و سطرآنچنان که لازم
+                    تکنولوژی :
                 </p>
 
                 <div
@@ -202,7 +201,7 @@
                             <div class="relative w-full">
                 <span
                         class="absolute right-6 top-0 rounded-b-lg bg-purple-500 px-4 py-2 font-dosis text-sm text-white dark:bg-purple-600">
-                  October 13, 2023
+                  {{ blogs.create_time|to_jalali:'%y/%m/%d' }}
                 </span>
                                 <img
                                         class="aspect-video w-full rounded-lg object-cover"

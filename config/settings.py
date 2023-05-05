@@ -30,9 +30,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jalali_date',
+
     # my apps
     'home.apps.HomeConfig',
     'blog.apps.BlogConfig',
+
     # party apps
     'tinymce',
 ]
