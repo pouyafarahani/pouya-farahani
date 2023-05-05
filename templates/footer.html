@@ -107,9 +107,10 @@
             </div>
             <div>
                 <form
-                        action="/test.php"
-                        method="GET"
+                        action="{% url 'home:home' %}"
+                        method="post"
                         class="relative flex aspect-square w-full flex-col items-center justify-center rounded-full border-2 border-solid border-black/20 dark:border-white/20">
+                    {% csrf_token %}
                     <h4 class="mb-8 text-center text-2xl font-bold lg:text-3xl">
                         فرم تماس با من
                     </h4>
@@ -122,16 +123,19 @@
                             class="block w-2/3 resize-none border-b border-solid border-b-black/20 bg-transparent py-2 focus:outline-0 dark:border-b-white/20"
                             id="usernameInput"
                             placeholder="نام شما"
+                            name="name"
                             type="text"/>
                     <input
                             class="block w-2/3 resize-none border-b border-solid border-b-black/20 bg-transparent py-2 focus:outline-0 dark:border-b-white/20"
                             id="emailInput"
                             placeholder="ایمیل شما"
+                            name="email"
                             type="text"/>
                     <textarea
                             class="block w-2/3 resize-none border-b border-solid border-b-black/20 bg-transparent py-2 focus:outline-0 dark:border-b-white/20"
                             placeholder="پیام شما"
                             rows="3"
+                            name="text"
                             id="textMessageInput"></textarea>
                     <button
                             type="submit"
