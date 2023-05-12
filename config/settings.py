@@ -30,22 +30,23 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # party apps
     'jalali_date',
+    'tinymce',
+    'debug_toolbar',
 
     # my apps
     'home.apps.HomeConfig',
     'blog.apps.BlogConfig',
-    'debug_toolbar',
+    'about.apps.AboutConfig',
 
-    # party apps
-    'tinymce',
 ]
+
 INTERNAL_IPS = [
     # ...
     "127.0.0.1",
     # ...
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
