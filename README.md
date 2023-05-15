@@ -1,7 +1,6 @@
 # 💫 About Me:
 👯 I’m looking to collaborate on<br>🌱 I’m currently learning (Forever)<br>I am an 18-year-old Python programmer living in Tehran. <br>I am always seeking to learn and grow in my programming career,<br>and I strive to improve my skills in this field by using online learning resources <br>and specialized books. Currently, I have been able to implement several independent web projects using Python and the Django framework. <br>Additionally, recognizing the need for coordination in programming teams, I have collaborated with some friends on joint projects and gained experience in teamwork. <br>However, I have never worked as a programmer in a company and I am looking to gain experience in this area.<br><br><br><br><br><br>
 
-
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/pouyafarahani.py) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/pouya-farahanj) 
 
